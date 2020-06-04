@@ -1,0 +1,136 @@
+.app {
+  min-height: 100vh;
+  background-image: url(images/two.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture {
+  min-height: 100vh;
+  background: $gradient-five;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 35vh 1fr;
+  grid-gap: 1.5rem;
+
+  & > * {
+    border-radius: 10px;
+  }
+}
+
+.photo-wrapper {
+  grid-row: 1 / 3;
+  border-radius: 10px;
+}
+
+.text {
+  font-size: 1.7rem;
+  padding: 1rem;
+  font-family: "Roboto";
+  color: rgba(255, 215, 0, 0.7);
+}
+
+.title,
+.explanation {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(navy, 0.3),
+      rgba(royalblue, 0.3)
+    ),
+    url(images/two.jpg);
+
+  &:hover {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(navy, 0.1),
+        rgba(royalblue, 0.1)
+      ),
+      url(images/two.jpg);
+    .text {
+      color: rgba(255, 215, 0, 0.9);
+    }
+  }
+}
+
+/* .one {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(navy, 0.4),
+      rgba(royalblue, 0.4)
+    ),
+    url(images/one.jpg);
+  background-size: cover;
+  background-position: top;
+  grid-row: 1 / 3;
+} */
+
+.btn-wrapper {
+  display: grid;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  height: 8rem;
+  padding: 1rem;
+  margin-left: 2rem;
+  color: gold;
+  font-size: 1.6rem;
+  font-family: "Consolas";
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(navy, 0.3),
+    rgba(royalblue, 0.3)
+  );
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+
+  &:hover {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(navy, 0.5),
+      rgba(royalblue, 0.5)
+    );
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background: $gradient-four;
+    transform: translateY(2px);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */

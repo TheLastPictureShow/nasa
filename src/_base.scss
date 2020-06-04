@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* turns 1 rem into 10px (because 100% is 16px by default); */
+}
+
+/* ------------------------ VARIABLES ---------------------- */
+
+$color-primary: midnightblue;
+
+$gradient-one: linear-gradient(
+  to right,
+  #6a11cb 0%,
+  #2575fc 100%
+); /* Midnight Blue */
+
+$gradient-two: linear-gradient(
+  120deg,
+  #a1c4fd 0%,
+  #c2e9fb 100%
+); /* Pale Blue */
+
+$gradient-three: linear-gradient(
+  to top,
+  #fdcbf1 0%,
+  #fdcbf1 1%,
+  #e6dee9 100%
+); /* Pale Pink */
+
+$gradient-four: linear-gradient(
+  to right,
+  #fa709a 0%,
+  #fee140 100%
+); /* Sunset */
+
+$gradient-five: linear-gradient(
+  to top,
+  #30cfd0 0%,
+  #330867 100%
+); /* Morpheus Den */
